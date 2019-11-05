@@ -26,5 +26,5 @@
         }
         if(!flag) cout<<"IMPOSSIBLE\n";
     
-        return 0;
+        return(0);
     }
