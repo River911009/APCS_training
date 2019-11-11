@@ -4,26 +4,24 @@
  */
  #include <iostream>
 
-using namespace std;
-
 int main(){
   int a,b,ans,flag=0;
 
-  cin>>a>>b>>ans;
+  std::cin>>a>>b>>ans;
 
   if((int)(a&&b)==ans) {
-    cout<<"AND\n";
+    std::cout<<"AND\n";
     flag=1;
   }
   if((int)(a||b)==ans) {
-    cout<<"OR\n";
+    std::cout<<"OR\n";
     flag=1;
   }
   if((int)((a==0 && b!=0) || (a!=0 && b==0))==ans) {
-    cout<<"XOR\n";
+    std::cout<<"XOR\n";
     flag=1;
   }
-  if(!flag) cout<<"IMPOSSIBLE\n";
+  if(!flag) std::cout<<"IMPOSSIBLE\n";
 
   return(0);
 }
